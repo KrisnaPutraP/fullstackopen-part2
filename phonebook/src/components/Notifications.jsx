@@ -3,11 +3,11 @@ const Notifications = ({ message, type }) => {
     return null
   }
 
-  return ( 
-      <div className={type}>
-        {message}
-      </div>
-    )
+  return (
+    <div className={type === 'error' ? 'error' : 'success'}>
+      {message}
+    </div>
+  )
 }
 
 export default Notifications
